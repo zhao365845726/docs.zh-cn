@@ -75,7 +75,7 @@ async Task<int> AccessTheWebAsync()
 密切注意 `await` 运算符。 它将暂停 `AccessTheWebAsync`；
 
 - 在 `getStringTask` 完成之前，`AccessTheWebAsync` 无法继续。
-- 同时，控件返回至 `AccessTheWebAsync` 的调用方。
+- 同时，控件返回至 `AccessTheWebAsync` 的调用方法。
 - 当 `getStringTask` 完成时，控件将在此处继续。
 - 然后，`await` 运算符会从 `getStringTask` 检索 `string` 结果。
 
